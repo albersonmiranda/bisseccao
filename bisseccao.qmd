@@ -1,0 +1,41 @@
+---
+title: O Método da Bissecção
+author:
+  - name: Alberson da Silva Miranda
+    email: alberson.miranda@estudante.ifes.edu.br
+    affiliations: 
+        - id: ifes
+          name: Instituto Federal do Espírito Santo
+          department: Licenciatura em Matemática
+          address: Av. Vitória
+          city: Vitória
+          state: ES, Brasil
+          postal-code: 29.040-780
+    attributes:
+        corresponding: true
+abstract: |
+  This is the abstract. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum augue turpis, dictum non malesuada a, volutpat eget velit. Nam placerat turpis purus, eu tristique ex tincidunt et. Mauris sed augue eget turpis ultrices tincidunt. Sed et mi in leo porta egestas. Aliquam non laoreet velit. Nunc quis ex vitae eros aliquet auctor nec ac libero. Duis laoreet sapien eu mi luctus, in bibendum leo molestie. Sed hendrerit diam diam, ac dapibus nisl volutpat vitae. Aliquam bibendum varius libero, eu efficitur justo rutrum at. Sed at tempus elit.
+keywords: 
+  - álgebra
+  - teorema do valor intermediário
+date: last-modified
+format:
+  elsevier-pdf:
+    keep-tex: false
+    journal:
+      name: Álgebra II, IFES
+      formatting: preprint
+      model: 3p
+      cite-style: authoryear
+bibliography: references.bib
+---
+
+# INTRODUÇÃO
+
+Para encontrar soluções de equações não lineares $f | f(x)=0$, talvez o método mais simples a ser implementado seja o *médodo da bissecção*. Bissectar significa dividir (*sectar*) em duas partes (*bi*). [@anton2012]
+
+# METODOLOGIA
+
+BLA BLA BLA
+
+# REFERÊNCIAS
