@@ -650,7 +650,7 @@
 \newbox\absbox
 \let\@elsarticleabstitle\@empty %*%
 \def\abstracttitle#1{\gdef\@elsarticleabstitle{#1}} %*%
-\abstracttitle{Abstract} %*%
+\abstracttitle{Resumo} %*%
 \renewenvironment{abstract}{\global\setbox\absbox=\vbox\bgroup
   \hsize=\textwidth\def\baselinestretch{1}%
   \noindent\unskip\textbf{\@elsarticleabstitle} %*%
@@ -706,7 +706,7 @@
 \let\@elsarticlekwdtitle\@empty %*%
 \def\keywordtitle#1{\gdef\@elsarticlekwdtitle{#1}} %*%
 \def\keywordtitlesep#1{\gdef\@elsarticlekeywordtitlesep{#1}} %*%
-\keywordtitle{Keywords} %*%
+\keywordtitle{Palavras-chave} %*%
 \keywordtitlesep{:\ }
 \def\keyword{%
   \def\sep{\unskip, }%

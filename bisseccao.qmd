@@ -19,9 +19,13 @@ keywords:
   - álgebra
   - teorema do valor intermediário
 date: last-modified
+lang: pt
 format:
   elsevier-pdf:
     keep-tex: false
+    code-block-border-left: false
+    code-line-numbers: true
+    highlight-style: tango
     journal:
       name: Álgebra II, IFES
       formatting: preprint
@@ -54,7 +58,7 @@ Este trabalho tem como objetivo oferecer uma implementação em Python do métod
 
 # METODOLOGIA
 
-Para implementarmos o método da bissecção, precisamos de uma função $f:[a,b] \rightarrow \mathbb{R}$ contínua em um intervalo tal que $f(a)$ e $f(b)$ tenham sinais opostos e, consequentemente, $f(a)f(b) < 0$. O método da bissecção consiste em dividir o intervalo $[a,b]$ ao meio, obtendo os subintervalos $[a,m]$ e $[m,b]$, onde $m = \frac{a+b}{2}$ é o ponto médio do intervalo, e considerar como novo intervalo aquele que contém a raiz da equação $f(x)=0$, ou seja, o intervalo em que $f$ tem sinais opostos nos extremos. Esse processo é repetido interativamente até se alcançar a precisão desejada [@andrade].
+Para implementarmos o método da bissecção, precisamos de uma função $f:[a,b] \rightarrow \mathbb{R}$ contínua em um intervalo tal que $f(a)$ e $f(b)$ tenham sinais opostos e, consequentemente, $f(a)f(b) < 0$. O método da bissecção consiste em dividir o intervalo $[a,b]$ ao meio, obtendo os subintervalos $[a,m]$ e $[m,b]$, onde $m = \frac{a+b}{2}$ é o ponto médio do intervalo, e considerar como novo intervalo aquele que contém a raiz da equação $f(x)=0$, ou seja, o intervalo em que $f$ tem sinais opostos nos extremos. Esse processo é repetido interativamente até se alcançar a precisão desejada [@andrade_metodo_2020].
 
 A partir disso, podemos encontrar uma solução para a equação $f(x)=0$ no intervalo $(a,b)$. Tome, por exemplo, a função $$f(x) = -2x^6-1.5x^4+10x+2$$ {#eq-fun} para determinarmos sua raiz. Por ser um método numérico, precisamos definir um $\epsilon$ para o erro relativo. Para isso, vamos definir $\epsilon = 0.00001$, ou seja, queremos nos aproximar da raiz de $f(x)$ com $10^{-5}$ de precisão.
 
