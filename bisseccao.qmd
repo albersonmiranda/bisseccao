@@ -32,10 +32,30 @@ bibliography: references.bib
 
 # INTRODUÇÃO
 
-Para encontrar soluções de equações não lineares $f | f(x)=0$, talvez o método mais simples a ser implementado seja o *médodo da bissecção*. Bissectar significa dividir (*sectar*) em duas partes (*bi*). [@anton2012]
+Para encontrar soluções de equações não lineares $f: f(x)=0$, talvez o método mais simples a ser implementado seja o *médodo da bissecção*. Bissectar significa dividir (*sectar*) em duas partes (*bi*). Esse método é um corolário do Teorema do Valor Intermediário de Bolzano-Weierstrass.
+
+::: {#thm-bolzano}
+
+## Teorema do Valor Intermediário
+
+Se $f$ for uma função contínua em um intervalo fechado $[a,b]$ e $k$ um número qualquer entre $f(a)$ e $f(b)$, inclusive, então existe no mínimo um número $x$ no intervalo $[a,b]$, tal que $f(x)=k$ [@anton2012].
+:::
+
+E uma consequência direta desse teorema é sua aplicação para encontrar raízes de equações não lineares na forma do seguinte corolário:
+
+::: {#cor-bolzano}
+
+Se $f$ for uma função contínua em $[a,b]$, e $f(a)$ e $f(b)$ forem diferentes de zero com sinais opostos, então existe, no mínimo, uma solução para a equação $f(x) = 0$ no intervalo $(a,b)$.
+
+## Demonstração {-}
+Como $f(a)$ e $f(b)$ têm sinais opostos, 0 está entre $f(a)$ e $f(b)$. Dessa forma, por @thm-bolzano, existe no mínimo um número $x$ no intervalo $[a,b]$, tal que $f(x)=0$. Contudo, $f(a)$ e $f(b)$ são diferentes de zero, logo $x$ deve estar situado entre $(a,b)$, o que completa a prova [@anton2012].
+
+:::
+
+Este trabalho tem como objetivo oferecer uma implementação em Python do método da bissecção para encontrar raízes de equações não lineares. 
 
 # METODOLOGIA
 
-BLA BLA BLA
+Para implementarmos o método da bissecção, precisamos de uma função $f$ contínua em um intervalo $[a,b]$ tal que $f(a)$ e $f(b)$ tenham sinais opostos. A partir disso, podemos encontrar uma solução para a equação $f(x)=0$ no intervalo $(a,b)$.
 
 # REFERÊNCIAS
